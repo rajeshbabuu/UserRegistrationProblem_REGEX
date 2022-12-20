@@ -28,7 +28,7 @@ namespace UserRegistrationForm
             }
             else
             {
-                Console.WriteLine("Invalide first name");
+                Console.WriteLine("Invalide first Name");
             }
             if (lst)
             {
