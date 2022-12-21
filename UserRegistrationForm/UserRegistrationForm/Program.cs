@@ -10,6 +10,7 @@
             UserForm.userEmail();
             UserForm.userMobile();
             UserForm.userPassword();
+            UserForm.upperCasePassword();
         }
     }
 }
