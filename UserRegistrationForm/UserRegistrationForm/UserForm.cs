@@ -61,7 +61,7 @@ namespace UserRegistrationForm
 
         public static void userMobile()
         {
-            Console.WriteLine("Enter mobile number : ");
+            Console.WriteLine("Enter mobole number : ");
             long userNumber = Convert.ToInt64(Console.ReadLine());
 
             Regex mob = new Regex(@"[6-9]{1}[0-9]{9}");
@@ -73,6 +73,25 @@ namespace UserRegistrationForm
             else
             {
                 Console.WriteLine("Invalide Mobile number : " + userNumber);
+
+            }
+        }
+
+        public static void userPassword()
+        {
+            Console.WriteLine("Enter Password  : ");
+            string password = Console.ReadLine();
+
+            Regex userPassword = new Regex(@"^[a-z A-Z]{8}");
+
+            bool userPasswordResult = userPassword.IsMatch(password);
+            if (userPasswordResult)
+            {
+                Console.WriteLine($"Valid Password : {password}");
+            }
+            else
+            {
+                Console.WriteLine($"Invalide Password : {password}");
             }
         }
     }

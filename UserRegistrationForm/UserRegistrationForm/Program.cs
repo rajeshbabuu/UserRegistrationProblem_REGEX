@@ -9,6 +9,7 @@
             UserForm.userForm();
             UserForm.userEmail();
             UserForm.userMobile();
+            UserForm.userPassword();
         }
     }
 }
